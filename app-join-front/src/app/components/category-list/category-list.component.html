@@ -1,0 +1,23 @@
+<div class = "row">
+    <h2> Category List</h2>
+</div>
+<button (click) = "createCategory()" class = "btn btn-success"> Add new</button>
+<table class = "table table-striped table-bordered">
+    <thead>
+        <tr>
+            <th> Name</th>
+            <th> Detais </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let category of categories" >
+            <td> {{ category.nameCategory }} </td>
+            <td> {{ category.detailsCategory }} </td>
+            <td>
+                <button  (click) = "updateCategory(category.idCategory)"  class = "btn btn-primary"> Update</button>
+                <button  (click) = "deleteCategory(category.idCategory)"  class = "btn btn-danger" style="margin-left: 10px"> Delete</button>
+                <button  (click) = "categoryDetails(category.idCategory)" class = "btn btn-warning" style="margin-left: 10px"> View</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,40 @@
+<div class="row">
+    <div class="card col-md-6 offset-md-3 offset-md-3">
+        <div class="row">
+            <h3 class="text-center"> Create Category </h3>
+            <hr />
+            <div class="card-body">
+                <form (ngSubmit)="onSubmit()">
+
+                    <div class="form-group">
+                        <label> Product Name</label>
+                        <input type="text" class="form-control" id="nameCategory" [(ngModel)]="product.nameProduct"
+                            name="nameCategory">
+                    </div>
+
+                    <div class="form-group">
+                        <label> Details</label>
+                        <input type="text" class="form-control" id="detailsCategory" [(ngModel)]="product.detailsProduct"
+                            name="detailsCategory">
+                    </div>
+
+                    <div class="form-group">
+                        <label> Price</label>
+                        <input type="text" class="form-control" id="detailsCategory" [(ngModel)]="product.priceProduct"
+                            name="detailsCategory">
+                    </div>
+
+                    <div class="form-group">
+                        <label> ID Category</label>
+                        <input type="text" class="form-control" id="idCategory" [(ngModel)]="product.idCategory"
+                            name="idCategory">
+                    </div>
+
+                    <br />
+                    <button class="btn btn-success" type="submit">Submit</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -16,6 +16,7 @@ Endpoints
 Para uso dos endpoints, use seu programa para requisições http (é possível fazer pelo navegador, também), no meu caso, estou usando Postman
 
 1 - Categoria
+
 /category - retorna todas as categorias
 
 /category/{id} - retorna uma categoria dado um ID especificado. Exemplo: http://localhost:8080/category/1 irá retornar a categoria de ID 1

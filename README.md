@@ -30,5 +30,24 @@ Exemplo de json de categoria:
 
 /category/delete/{id} - deleta uma categoria, recebendo um ID da categoria, Exemplo: http://localhost:8080/category/delete/4, irá deletar a categoria de ID 4
 
-/category/{id}/edit - edita uma categoria, recebendo o ID da categoria que você deseja editar, na URL Exemplo: http://localhost:8080/category/1/edit. Será necessário também enviar um json com os novos dados da categoria
+/category/edit/{id} - edita uma categoria, recebendo o ID da categoria que você deseja editar, na URL. Exemplo: http://localhost:8080/category/edit/1. Será necessário também enviar um json com os novos dados da categoria
 
+2 - Produto
+
+/product - retorna todos os produtos
+
+/product/{id} - retorna um produto dado um ID especificado. Exemplo: http://localhost:8080/product/1 irá retornar o produto de ID 1
+
+/product/create - cria um produto, recebendo um json de produto. Exemplo: http://localhost:8080/product/create, enviando um json de produto
+Exemplo de json de produto:
+
+{
+    "nameProduct": "Shampoo Clear Men do CR 7",
+    "detailsProduct": "Shampoo Clear Men do CRSeven",
+    "priceProduct": 10,
+    "idCategory": 1
+}
+
+/product/delete{id} - deleta um produto, recebendo um ID do produto. Exemplo http://localhost:8080/product/delete/1, irá deletar o produto de ID 1
+
+/product/edit/{id} - edita um produto, recebendo o ID do produto que você deseja editar, na URL. Exemplo: http://localhost:8080/product/edit/1. Será necessário também enviar um json com os novos dados do produto
